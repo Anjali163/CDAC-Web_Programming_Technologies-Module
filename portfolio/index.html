@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Nanavare | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS: a small page-specific accent for the home page only. -->
+  <style>
+    .home-note { color: #6d28d9; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">AN</span><span>Anjali Nanavare</span></a>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        
+        <h1>HELLO,  <span>I'M ANJALI.</span></h1>
+        <p class="eyebrow"> Building my future in software development.</p>
+        <p>Electronics and Telecommunication graduate learning to create useful, user-friendly software through coding, practice and problem solving.</p>
+        <a class="button" href="projects.html">View my projects <span aria-hidden="true">→</span></a>
+        <p class="home-note">Learning every day. Building step by step.</p>
+      </div>
+      <div class="hero-image">
+        <img src="pic.png" width="280" height="280" >
+      </div>
+    </section>
+
+    <section class="middle-row" id="about">
+      <div class="subscribe-box">
+        <h2>Stay in touch</h2>
+        <p>Get updates about my learning and projects.</p>
+        <form action="#" method="get">
+          <label for="subscribe-email">Email address</label>
+          <input id="subscribe-email" name="email" type="email" placeholder="you@example.com">
+          <button class="button" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="about-box">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curious mind, consistent effort.</h2>
+        <p>I am a BE Electronics and Telecommunication graduate from Pune, currently pursuing the PG Certificate Programme in Advanced Computing (PGCP-AC) at C-DAC Kharghar. I am strengthening my foundation in programming, databases and web technologies, with the goal of growing into a software development role.</p>
+        <p>Outside coding, I enjoy music and series, and spending time with people close to me.</p>
+      </div>
+    </section>
+
+    <section class="card-section">
+      <p class="eyebrow">MY FOUNDATION</p>
+      <h2>Education, skills and projects</h2>
+      <div class="feature-row">
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🎓</span>
+          <h3>Education</h3>
+          <ol class="compact-list">
+            <li>PGCP-AC, C-DAC Kharghar — 2026–Present</li>
+            <li>BE E&TC, Pune University — 2025</li>
+            <li>HSC — 90.40%</li>
+          </ol>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">⌘</span>
+          <h3>Skills</h3>
+          <ul class="compact-list" id="skills-list">
+            <li>C and C++</li><li>Java and OOP</li><li>SQL and DBMS</li><li>HTML and CSS</li><li>Python fundamentals</li><li>Problem solving</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon" aria-hidden="true">▣</span>
+          <h3>Projects</h3>
+          <p>Practice and academic projects focused on problem solving, data and practical applications.</p>
+          <a class="text-link" href="projects.html">Explore projects →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Anjali Nanavare · Made with HTML and CSS</p>
+    <div><a href="https://github.com/Anjali163" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </footer>
+  <!-- Later: a dark-mode button could be added here when JavaScript is taught. -->
+</body>
+</html>

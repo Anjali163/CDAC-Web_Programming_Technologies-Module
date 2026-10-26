@@ -1,0 +1,19 @@
+Part A: Written Questions
+
+1. When a user enters my portfolio URL, the browser looks up the website's IP address using DNS. The browser sends an HTTP/HTTPS request to the web server. The server sends back the requested HTML, CSS and image files. The browser reads these files and displays the page. In a dynamic website, application logic usually runs on the server and the database stores data. A simple static portfolio may not need a database.
+
+2. A contact form should use POST because it sends the message in the request body instead of putting the form data in the URL. If method is omitted, the form uses GET by default. A successful request may return status code 200 OK. Server errors are in the 5xx family, such as 500 Internal Server Error.
+
+3. The three types of CSS are inline CSS (inside an element's style attribute), internal CSS (inside a style element in the HTML head), and external CSS (in a separate .css file linked to the page). For normal author styles, inline styles usually win over internal and external rules when specificity and importance do not override them. I would use external CSS for styles shared by four pages because one file can style all of them consistently.
+
+4. The ID selector #intro applies because it has the highest specificity among these selectors. Order from strongest to weakest: #intro, .note, p, *. This assumes the rules have equal importance and no other specificity conflicts.
+
+5. Padding is the space between content and border. Margin is the space outside the border. The box model is: margin → border → padding → content. With box-sizing: border-box, the declared width and height include content, padding and border, making element sizing easier to manage.
+
+6. JavaScript usually runs in the browser, using the browser's JavaScript engine to parse and execute the code. Modern engines can compile code internally while running it, so a separate compiler is not needed by the developer. JavaScript can validate a form and update page content after a user clicks a button; HTML and CSS alone cannot perform that general interactive logic.
+
+7. JavaScript is dynamically typed. If I write a = 5, a contains a number. If I then write a = "hello", a contains a string; the variable can hold a different type. Three data types are number, string and boolean.
+
+8. static is the normal document flow position. relative keeps an element in its normal place but allows it to be offset. absolute positions an element relative to its nearest positioned ancestor. fixed positions an element relative to the browser window and it stays there while scrolling. top, left, right and bottom set the offset from the relevant edges for positioned elements.
+
+9. Flex values 1, 2 and 1 divide the available flexible width into four equal parts: the boxes get 1/4, 2/4 and 1/4 of the available space, after other sizing and gaps are accounted for. gap sets the space between boxes. justify-content: center centres the group along the main axis when there is extra space.
